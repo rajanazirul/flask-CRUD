@@ -14,7 +14,7 @@ git clone `https://github.com/rajanazirul/flask-CRUD.git`
 
 Setup virtual environment
 
-`virtualenv env`
+`virtualenv env -p python3`
 
 for windows, copy path `\env\Scripts\activate.bat`
 
@@ -86,20 +86,34 @@ http://localhost/userlists/
 http://localhost/userlists/<id>
 ```
 
-Test using POSTMAN
+Test using POSTMAN by Body-form-data
 ```
-POST/GET/PUT/DELETE  http://localhost/userlists/
+POST/GET  http://localhost/userlists/
 GET/PUT/DELETE  http://localhost/userlists/<id>
 ```
 
-example:
+example in POSTMAN using POST http://localhost/userlists/ by Body, form-data:
+
 | KEY             | Value                   | 
 | -------------   |-------------------------|
 | name            | rajanazirul             | 
 | email           | rajanazirul@gmail.com   |
 
+will get reply
+
+'''
+{
+    "date_created": "Fri, 19 Feb 2021 12:36:00 GMT",
+    "date_modified": "Fri, 19 Feb 2021 12:36:00 GMT",
+    "email": "rajanazirul@gmail.com",
+    "id": 1,
+    "name": "rajanazirul"
+}
+'''
 
 Reference:
-https://scotch.io/tutorials/build-a-restful-api-with-flask-the-tdd-way#toc-time-to-test-
 https://www.youtube.com/watch?v=eAPmXQ0dC7Q&t=3762s
+
 https://support.esri.com/en/technical-article/000010234
+
+https://scotch.io/tutorials/build-a-restful-api-with-flask-the-tdd-way#toc-time-to-test-
