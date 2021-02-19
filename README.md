@@ -101,7 +101,7 @@ example in POSTMAN using POST http://localhost/userlists/ by Body, form-data:
 
 will get reply
 
-'''
+```
 {
     "date_created": "Fri, 19 Feb 2021 12:36:00 GMT",
     "date_modified": "Fri, 19 Feb 2021 12:36:00 GMT",
@@ -109,7 +109,7 @@ will get reply
     "id": 1,
     "name": "rajanazirul"
 }
-'''
+```
 
 Reference:
 https://www.youtube.com/watch?v=eAPmXQ0dC7Q&t=3762s
